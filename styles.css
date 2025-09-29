@@ -1,0 +1,45 @@
+.bg-charcoal {background-color: #4A4A4A !important;}
+.border-dashed {border-style: dashed !important;}
+
+img {
+  max-width: 230px;
+  height: auto;
+}
+
+label.excel {
+  max-width: 350px;
+  height: 350px;
+  cursor: pointer;
+}
+
+#outputDiv {max-width: 600px;}
+
+@media print {
+  body * {
+    display: none !important;
+  }
+
+  #outputDiv, #outputDiv * {
+    display: block !important;
+    visibility: visible;
+  }
+
+  #outputDiv {
+    position: relative;
+    margin: 0;
+    background: white;
+    box-shadow: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #outputDiv {
+    width: 95% !important;
+    font-size: 14px;
+  }
+
+  table th, table td {
+    font-size: 13px;
+    word-break: break-word;
+  }
+}
